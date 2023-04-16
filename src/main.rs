@@ -3,10 +3,7 @@ mod utils {
 }
 
 use utils::generate_readme::generate_readme;
-use std::fs;
-use std::fs::File;
 use std::io;
-use dialoguer::{theme::ColorfulTheme, Select};
 
 
 pub struct ReadMeData {
@@ -63,21 +60,5 @@ fn main() {
     io::stdin().read_line(&mut data.project_license);
 
     generate_readme(data);
-    // let selections = &[
-    //     "Ice Cream",
-    //     "Vanilla Cupcake",
-    //     "Chocolate Muffin",
-    //     "A Pile of sweet, sweet mustard",
-    // ];
 
-    // let selection = Select::with_theme(&ColorfulTheme::default())
-    //     .with_prompt("Pick your flavor")
-    //     .default(0)
-    //     .items(&selections[..])
-    //     .interact()
-    //     .unwrap();
-
-    // println!("Enjoy your {}!", selections[selection]);
-
-    
 }
