@@ -77,7 +77,7 @@ pub fn generate_readme(data: ReadMeData) -> std::io::Result<()>{
     
     
     
-    
+  {}
     
   <p align=\"right\">(<a href=\"#readme-top\">back to top</a>)</p>
     
@@ -90,7 +90,7 @@ pub fn generate_readme(data: ReadMeData) -> std::io::Result<()>{
     
   ### Prerequisites
     
-   
+  {}
     
   ### Installation
     
@@ -118,7 +118,7 @@ pub fn generate_readme(data: ReadMeData) -> std::io::Result<()>{
   <!-- USAGE EXAMPLES -->
   ## Usage
     
-   
+  {}
   <p align=\"right\">(<a href=\"#readme-top\">back to top</a>)</p>
     
     
@@ -186,9 +186,12 @@ pub fn generate_readme(data: ReadMeData) -> std::io::Result<()>{
    data.github_name, 
    data.repo_name, 
    data.project_description, 
+   data.project_skills,
+   data.project_prerequisites,
    data.github_name, 
    data.repo_name, 
    data.github_name,
+  data.project_usage,
   data.project_roadmap,
   data.github_name, 
   data.repo_name, 

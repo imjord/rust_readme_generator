@@ -9,9 +9,9 @@
     
     
   <div align="center">
-  <h3 align="center">j</h3>
+  <h3 align="center">rust readme generator</h3>
   <p align="center">
-   j
+   Best readme
   <br />
   <br />
   <a href="https://github.com/imjord/rust_readme_generator">View Demo</a>
@@ -55,7 +55,7 @@
     
     
     
-  j
+  The best readme generator made in rust
     
     
     
@@ -67,7 +67,7 @@
     
     
     
-    
+  Rust of course
     
   <p align="right">(<a href="#readme-top">back to top</a>)</p>
     
@@ -80,7 +80,7 @@
     
   ### Prerequisites
     
-   
+  rust and ide
     
   ### Installation
     
@@ -108,7 +108,7 @@
   <!-- USAGE EXAMPLES -->
   ## Usage
     
-   
+  cargo run
   <p align="right">(<a href="#readme-top">back to top</a>)</p>
     
     
@@ -116,7 +116,7 @@
    <!-- ROADMAP -->
    ## Roadmap
     
-  - [] jj
+  - [] more rust
     
     
   See the [open issues](https://github.com/imjord/rust_readme_generator/issues) for a full list of future proposed features (and known issues).
@@ -144,7 +144,7 @@
    <!-- LICENSE -->
    ## License
     
-  j
+  mit
     
    <p align="right">(<a href="#readme-top">back to top</a>)</p>
     

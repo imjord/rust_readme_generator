@@ -11,6 +11,8 @@ pub struct ReadMeData {
     project_description: String,
     project_bio: String,
     project_skills: String,
+    project_prerequisites: String,
+    project_usage: String,
     project_roadmap: String,
     project_license: String,
 
@@ -32,16 +34,21 @@ fn read_line(prompt: &str) -> String {
 
 fn main() {
     welcome();
-    let mut data = ReadMeData {
+    let data = ReadMeData {
         github_name: read_line("Please enter your github username (must be exact)"),
         repo_name: read_line("Please enter repo name (must be exact)"),
         project_name: read_line("Please enter project name"),
         project_description: read_line("Please enter project description"),
         project_bio: read_line("Please enter project bio"),
         project_skills: read_line("Please enter project skills"),
+        project_prerequisites: read_line("Please enter project prerequisites"),
+        project_usage: read_line("Please enter project usage / links to demo"),
         project_roadmap: read_line("Please enter project roadmap"),
         project_license: read_line("Please enter project license")
     };
-    generate_readme(data);
+    match generate_readme(data) {
+        Ok(()) => println!("readme generated successfully"),
+        Err(e) => println!("error trying to create the readme: {}", e),
+    }
 
 }
