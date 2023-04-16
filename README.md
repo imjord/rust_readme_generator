@@ -9,9 +9,9 @@
     
     
   <div align="center">
-  <h3 align="center">rust</h3>
+  <h3 align="center">j</h3>
   <p align="center">
-   rust
+   j
   <br />
   <br />
   <a href="https://github.com/imjord/rust_readme_generator">View Demo</a>
@@ -55,7 +55,7 @@
     
     
     
-    rust
+  j
     
     
     
@@ -76,7 +76,7 @@
   <!-- GETTING STARTED -->
   ## Getting Started
     
-    If you would like to clone the repo hopefully this will help.
+  If you would like to clone the repo hopefully this will help.
     
   ### Prerequisites
     
@@ -113,49 +113,49 @@
     
     
     
-  <!-- ROADMAP -->
-  ## Roadmap
+   <!-- ROADMAP -->
+   ## Roadmap
     
-    - [] rust
-    
-    
-    See the [open issues](https://github.com/imjord/rust_readme_generator/issues) for a full list of future proposed features (and known issues).
-    
-  <p align="right">(<a href="#readme-top">back to top</a>)</p>
+  - [] jj
     
     
+  See the [open issues](https://github.com/imjord/rust_readme_generator/issues) for a full list of future proposed features (and known issues).
     
-  <!-- CONTRIBUTING -->
-  ## Contributing
-    
-    If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-    Don't forget to give the project a star! Thanks again!
-    
-    1. Fork the Project
-    2. Create your Feature Branch (\`git checkout -b feature/AmazingFeature\`)
-    3. Commit your Changes (\`git commit -m 'Add some AmazingFeature'\`)
-    4. Push to the Branch (\`git push origin feature/AmazingFeature\`)
-    5. Open a Pull Request
-    
-  <p align="right">(<a href="#readme-top">back to top</a>)</p>
+   <p align="right">(<a href="#readme-top">back to top</a>)</p>
     
     
     
-  <!-- LICENSE -->
-  ## License
+   <!-- CONTRIBUTING -->
+   ## Contributing
     
-    rust
+  If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+  Don't forget to give the project a star! Thanks again!
     
-  <p align="right">(<a href="#readme-top">back to top</a>)</p>
+  1. Fork the Project
+  2. Create your Feature Branch (\`git checkout -b feature/AmazingFeature\`)
+  3. Commit your Changes (\`git commit -m 'Add some AmazingFeature'\`)
+  4. Push to the Branch (\`git push origin feature/AmazingFeature\`)
+  5. Open a Pull Request
+    
+   <p align="right">(<a href="#readme-top">back to top</a>)</p>
     
     
     
-  <!-- CONTACT -->
-  ## Contact
+   <!-- LICENSE -->
+   ## License
     
-    Just message me on github mang <3 imjord
+  j
     
-    Project Link: [https://github.com/imjord/rust_readme_generator](https://github.com/imjord/rust_readme_generator)
+   <p align="right">(<a href="#readme-top">back to top</a>)</p>
     
-  <p align="right">(<a href="#readme-top">back to top</a>)</p>
+    
+    
+   <!-- CONTACT -->
+   ## Contact
+    
+  Just message me on github mang <3 imjord
+    
+  Project Link: [https://github.com/imjord/rust_readme_generator](https://github.com/imjord/rust_readme_generator)
+    
+   <p align="right">(<a href="#readme-top">back to top</a>)</p>
    
