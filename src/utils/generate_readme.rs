@@ -6,7 +6,7 @@ use crate::ReadMeData;
 
 
 pub fn generate_readme(data: ReadMeData) -> std::io::Result<()>{
-    let mut file = File::create("RustReadMe.md")?;
+    let mut file = File::create("README.md")?;
    let contents = format!(
     "<a name=\"readme-top\"></a>
     ![GitHub contributors](https://img.shields.io/github/contributors/{}/{}?color=%23454B1B&label=CONTRIBUTORS%20%3C3&style=for-the-badge)
@@ -73,7 +73,7 @@ pub fn generate_readme(data: ReadMeData) -> std::io::Result<()>{
     ### Built With
     
     
-    {}
+    
     
     
     <p align=\"right\">(<a href=\"#readme-top\">back to top</a>)</p>
@@ -87,7 +87,7 @@ pub fn generate_readme(data: ReadMeData) -> std::io::Result<()>{
     
     ### Prerequisites
     
-   {}
+   
     
     ### Installation
     
@@ -115,7 +115,7 @@ pub fn generate_readme(data: ReadMeData) -> std::io::Result<()>{
     <!-- USAGE EXAMPLES -->
     ## Usage
     
-    {}
+   
     <p align=\"right\">(<a href=\"#readme-top\">back to top</a>)</p>
     
     
@@ -166,7 +166,36 @@ pub fn generate_readme(data: ReadMeData) -> std::io::Result<()>{
     
     <p align=\"right\">(<a href=\"#readme-top\">back to top</a>)</p>\",
          data.github_name, data.repo_name
-   ");
+   ", 
+   data.github_name, 
+   data.repo_name, 
+   data.github_name, 
+   data.repo_name, 
+   data.github_name, 
+   data.repo_name, 
+   data.github_name, 
+   data.repo_name, 
+   data.project_name, 
+   data.project_bio, 
+   data.github_name, 
+   data.repo_name, 
+   data.github_name, 
+   data.repo_name, 
+   data.github_name, 
+   data.repo_name, 
+   data.project_description, 
+   data.github_name, 
+   data.repo_name, 
+   data.github_name,
+  data.project_roadmap,
+  data.github_name, 
+  data.repo_name, 
+  data.project_license,
+  data.github_name, 
+  data.github_name, 
+  data.repo_name, 
+  data.github_name, 
+  data.repo_name  );
 
     file.write_all(contents.as_bytes())?;
     Ok(())

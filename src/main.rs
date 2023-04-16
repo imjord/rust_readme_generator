@@ -11,7 +11,15 @@ use dialoguer::{theme::ColorfulTheme, Select};
 
 pub struct ReadMeData {
     github_name: String,
-    repo_name: String
+    repo_name: String,
+    project_name: String,
+    project_description: String,
+    project_bio: String,
+    project_skills: String,
+    project_roadmap: String,
+    project_license: String,
+
+
 }
 
 fn welcome(){
@@ -26,15 +34,34 @@ fn main() {
     welcome();
     let mut data = ReadMeData {
         github_name: String::new(),
-        repo_name: String::new()
+        repo_name: String::new(),
+        project_name: String::new(),
+        project_description: String::new(),
+        project_bio: String::new(),
+        project_skills: String::new(),
+        project_roadmap: String::new(),
+        project_license: String::new(),
+
+
     };
 
     println!("Please enter your github username / must be exact");
     io::stdin().read_line(&mut data.github_name);
     println!("Please enter repo name / must be exact");
     io::stdin().read_line(&mut data.repo_name);
+    println!("Please enter project name / must be exact");
+    io::stdin().read_line(&mut data.project_name);
+    println!("Please enter project description / must be exact");
+    io::stdin().read_line(&mut data.project_description);
+    println!("Please enter project bio / must be exact");
+    io::stdin().read_line(&mut data.project_bio);
+    println!("Please enter project skills / must be exact");
+    io::stdin().read_line(&mut data.project_skills);
+    println!("Please enter project roadmap / must be exact");
+    io::stdin().read_line(&mut data.project_roadmap);
+    println!("Please enter project license / must be exact");
+    io::stdin().read_line(&mut data.project_license);
 
-    println!("{:?}", data.github_name.trim());
     generate_readme(data);
     // let selections = &[
     //     "Ice Cream",
