@@ -9,16 +9,17 @@ pub fn generate_readme(data: ReadMeData) -> std::io::Result<()>{
     let mut file = File::create("README.md")?;
    let contents = format!(
     "<a name=\"readme-top\"></a>
-    ![GitHub contributors](https://img.shields.io/github/contributors/{}/{}?color=%23454B1B&label=CONTRIBUTORS%20%3C3&style=for-the-badge)
-    ![GitHub forks](https://img.shields.io/github/forks/{}/{}?style=for-the-badge)
-    ![GitHub Repo stars](https://img.shields.io/github/stars/{}/{}?style=for-the-badge)
-    ![GitHub](https://img.shields.io/github/license/{}/{}?style=for-the-badge)
+
+  ![GitHub contributors](https://img.shields.io/github/contributors/{}/{}?color=%23454B1B&label=CONTRIBUTORS%20%3C3&style=for-the-badge)
+  ![GitHub forks](https://img.shields.io/github/forks/{}/{}?style=for-the-badge)
+  ![GitHub Repo stars](https://img.shields.io/github/stars/{}/{}?style=for-the-badge)
+  ![GitHub](https://img.shields.io/github/license/{}/{}?style=for-the-badge)
     
     
     
     
-    <div align=\"center\">
-    <h3 align=\"center\">{}</h3>
+  <div align=\"center\">
+  <h3 align=\"center\">{}</h3>
   <p align=\"center\">
    {}
   <br />
@@ -30,8 +31,10 @@ pub fn generate_readme(data: ReadMeData) -> std::io::Result<()>{
         <a href=\"https://github.com/{}/{}/issues\">Request Feature</a>
       </p>
     </div>
-    <!-- TABLE OF CONTENT -->
-    <details>
+
+
+  <!-- TABLE OF CONTENT -->
+  <details>
       <summary>Table of Contents</summary>
       <ol>
         <li>
@@ -56,8 +59,8 @@ pub fn generate_readme(data: ReadMeData) -> std::io::Result<()>{
     </details>
     
     
-    <!-- ABOUT THE PROJECT -->
-    ## About The Project
+  <!-- ABOUT THE PROJECT -->
+  ## About The Project
     
     
     
@@ -66,74 +69,74 @@ pub fn generate_readme(data: ReadMeData) -> std::io::Result<()>{
     
     
     
-    <p align=\"right\">(<a href=\"#readme-top\">back to top</a>)</p>
+  <p align=\"right\">(<a href=\"#readme-top\">back to top</a>)</p>
     
     
     
-    ### Built With
+  ### Built With
     
     
     
     
     
-    <p align=\"right\">(<a href=\"#readme-top\">back to top</a>)</p>
+  <p align=\"right\">(<a href=\"#readme-top\">back to top</a>)</p>
     
     
     
-    <!-- GETTING STARTED -->
-    ## Getting Started
+  <!-- GETTING STARTED -->
+  ## Getting Started
     
     If you would like to clone the repo hopefully this will help.
     
-    ### Prerequisites
+  ### Prerequisites
     
    
     
-    ### Installation
+  ### Installation
     
-    1. Clone the repo
-        \\`\\`\\`sh
+  1. Clone the repo
+        ```sh
         git clone https://github.com/{}/{}.git
-        \\`\\`\\`
-    2. Install NPM packages in both client and server folders
-        \\`\\`\\`sh
+        ```
+  2. Install NPM packages in both client and server folders
+        ```sh
         npm install
-        \\`\\`\\`
-    3. Create a .env file in the server folder and add your own MongoDB URI
-        \\`\\`\\`sh
+        ```
+  3. Create a .env file in the server folder and add your own MongoDB URI
+        ```sh
         MONGODB_URI=YOUR_OWN_MONGODB_URI
-        \\`\\`\\`
-    4. Run the start commands in both client and server folders (commands are in the package.json files).
-        \\`\\`\\`sh
+        ```
+  4. Run the start commands in both client and server folders (commands are in the package.json files).
+        ```sh
         npm start / npm run dev
-        \\`\\`\\`
-    5. Enjoy! made with <3 by {}
-    <p align=\"right\">(<a href=\"#readme-top\">back to top</a>)</p>
+        ```
+  5. Enjoy! made with <3 by {}
+  <p align=\"right\">(<a href=\"#readme-top\">back to top</a>)</p>
     
     
     
-    <!-- USAGE EXAMPLES -->
-    ## Usage
+  <!-- USAGE EXAMPLES -->
+  ## Usage
     
    
-    <p align=\"right\">(<a href=\"#readme-top\">back to top</a>)</p>
+  <p align=\"right\">(<a href=\"#readme-top\">back to top</a>)</p>
     
     
     
-    <!-- ROADMAP -->
-    ## Roadmap
+  <!-- ROADMAP -->
+  ## Roadmap
     
     - [] {}
     
     
     See the [open issues](https://github.com/{}/{}/issues) for a full list of future proposed features (and known issues).
     
-    <p align=\"right\">(<a href=\"#readme-top\">back to top</a>)</p>
+  <p align=\"right\">(<a href=\"#readme-top\">back to top</a>)</p>
     
     
     
-    <!-- CONTRIBUTING -->
-    ## Contributing
+  <!-- CONTRIBUTING -->
+  ## Contributing
     
     If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag \"enhancement\".
     Don't forget to give the project a star! Thanks again!
@@ -144,28 +147,27 @@ pub fn generate_readme(data: ReadMeData) -> std::io::Result<()>{
     4. Push to the Branch (\\`git push origin feature/AmazingFeature\\`)
     5. Open a Pull Request
     
-    <p align=\"right\">(<a href=\"#readme-top\">back to top</a>)</p>
+  <p align=\"right\">(<a href=\"#readme-top\">back to top</a>)</p>
     
     
     
-    <!-- LICENSE -->
-    ## License
+  <!-- LICENSE -->
+  ## License
     
     {}
     
-    <p align=\"right\">(<a href=\"#readme-top\">back to top</a>)</p>
+  <p align=\"right\">(<a href=\"#readme-top\">back to top</a>)</p>
     
     
     
-    <!-- CONTACT -->
-    ## Contact
+  <!-- CONTACT -->
+  ## Contact
     
     Just message me on github mang <3 {}
     
     Project Link: [https://github.com/{}/{}](https://github.com/{}/{})
     
-    <p align=\"right\">(<a href=\"#readme-top\">back to top</a>)</p>\",
-         data.github_name, data.repo_name
+  <p align=\"right\">(<a href=\"#readme-top\">back to top</a>)</p>
    ", 
    data.github_name, 
    data.repo_name, 

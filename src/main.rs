@@ -1,10 +1,8 @@
 mod utils {
     pub mod generate_readme;
 }
-
 use utils::generate_readme::generate_readme;
 use std::io;
-
 
 pub struct ReadMeData {
     github_name: String,
@@ -18,7 +16,6 @@ pub struct ReadMeData {
 
 
 }
-
 fn welcome(){
     let welcome  = "Welcome to imjord readme generator made in rust";
     let welcome_uppercase = welcome.to_uppercase();
@@ -26,39 +23,25 @@ fn welcome(){
     println!("----------------------------------------");
 
 }   
+fn read_line(prompt: &str) -> String {
+    println!{"{}", prompt};
+    let mut input = String::new();
+    io::stdin().read_line(&mut input).expect("Failed to read line");
+    input.trim().to_string()
+}
 
 fn main() {
     welcome();
     let mut data = ReadMeData {
-        github_name: String::new(),
-        repo_name: String::new(),
-        project_name: String::new(),
-        project_description: String::new(),
-        project_bio: String::new(),
-        project_skills: String::new(),
-        project_roadmap: String::new(),
-        project_license: String::new(),
-
-
+        github_name: read_line("Please enter your github username (must be exact)"),
+        repo_name: read_line("Please enter repo name (must be exact)"),
+        project_name: read_line("Please enter project name"),
+        project_description: read_line("Please enter project description"),
+        project_bio: read_line("Please enter project bio"),
+        project_skills: read_line("Please enter project skills"),
+        project_roadmap: read_line("Please enter project roadmap"),
+        project_license: read_line("Please enter project license")
     };
-
-    println!("Please enter your github username / must be exact");
-    io::stdin().read_line(&mut data.github_name);
-    println!("Please enter repo name / must be exact");
-    io::stdin().read_line(&mut data.repo_name);
-    println!("Please enter project name / must be exact");
-    io::stdin().read_line(&mut data.project_name);
-    println!("Please enter project description / must be exact");
-    io::stdin().read_line(&mut data.project_description);
-    println!("Please enter project bio / must be exact");
-    io::stdin().read_line(&mut data.project_bio);
-    println!("Please enter project skills / must be exact");
-    io::stdin().read_line(&mut data.project_skills);
-    println!("Please enter project roadmap / must be exact");
-    io::stdin().read_line(&mut data.project_roadmap);
-    println!("Please enter project license / must be exact");
-    io::stdin().read_line(&mut data.project_license);
-
     generate_readme(data);
 
 }
