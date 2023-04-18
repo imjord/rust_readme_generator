@@ -9,9 +9,9 @@
     
     
   <div align="center">
-  <h3 align="center">rust readme generator</h3>
+  <h3 align="center">RUST READ ME GENERATOR!!!</h3>
   <p align="center">
-   Best readme
+   mern readme made in rust
   <br />
   <br />
   <a href="https://github.com/imjord/rust_readme_generator">View Demo</a>
@@ -55,7 +55,7 @@
     
     
     
-  The best readme generator made in rust
+  A readme generator that i originally made in node. rewritten in rust. a readme for mern projects.
     
     
     
@@ -80,7 +80,7 @@
     
   ### Prerequisites
     
-  rust and ide
+  for mern projects
     
   ### Installation
     
@@ -108,7 +108,7 @@
   <!-- USAGE EXAMPLES -->
   ## Usage
     
-  cargo run
+  NA
   <p align="right">(<a href="#readme-top">back to top</a>)</p>
     
     
@@ -144,7 +144,7 @@
    <!-- LICENSE -->
    ## License
     
-  mit
+  MIT
     
    <p align="right">(<a href="#readme-top">back to top</a>)</p>
     
