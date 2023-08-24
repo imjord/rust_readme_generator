@@ -3,6 +3,7 @@ mod utils {
 }
 use utils::generate_readme::generate_readme;
 use std::io;
+use colored::*;
 
 pub struct ReadMeData {
     github_name: String,
@@ -18,14 +19,8 @@ pub struct ReadMeData {
 
 
 }
-fn welcome(){
-    let welcome  = "Welcome to imjord readme generator made in rust";
-    let welcome_uppercase = welcome.to_uppercase();
-    println!("{}", welcome_uppercase);
-    println!("----------------------------------------");
 
-}   
-fn read_line(prompt: &str) -> String {
+fn prompt_user(prompt: &str) -> String {
     println!{"{}", prompt};
     let mut input = String::new();
     io::stdin().read_line(&mut input).expect("Failed to read line");
@@ -33,18 +28,22 @@ fn read_line(prompt: &str) -> String {
 }
 
 fn main() {
-    welcome();
+    println!("\n\n\n\n\n\n");
+    let welcome  = "Welcome to imjord readme generator made in rust";
+    let welcome_uppercase = welcome.to_uppercase();
+    println!("{}", welcome_uppercase.green().bold().italic());
+    println!("{}", "-----------------------------------------------".green());
     let data = ReadMeData {
-        github_name: read_line("Please enter your github username (must be exact)"),
-        repo_name: read_line("Please enter repo name (must be exact)"),
-        project_name: read_line("Please enter project name"),
-        project_description: read_line("Please enter project description"),
-        project_bio: read_line("Please enter project bio"),
-        project_skills: read_line("Please enter project skills"),
-        project_prerequisites: read_line("Please enter project prerequisites"),
-        project_usage: read_line("Please enter project usage / links to demo"),
-        project_roadmap: read_line("Please enter project roadmap"),
-        project_license: read_line("Please enter project license")
+        github_name: prompt_user("Please enter your github username (must be exact)"),
+        repo_name: prompt_user("Please enter repo name (must be exact)"),
+        project_name: prompt_user("Please enter project name"),
+        project_description: prompt_user("Please enter project description"),
+        project_bio: prompt_user("Please enter project bio"),
+        project_skills: prompt_user("Please enter project skills"),
+        project_prerequisites: prompt_user("Please enter project prerequisites"),
+        project_usage: prompt_user("Please enter project usage / links to demo"),
+        project_roadmap: prompt_user("Please enter project roadmap"),
+        project_license: prompt_user("Please enter project license")
     };
     match generate_readme(data) {
         Ok(()) => println!("readme generated successfully"),
